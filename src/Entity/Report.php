@@ -15,8 +15,8 @@ class Report
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $location = null;
+    #[ORM\Column()]
+    private array $location = [];
 
     #[ORM\Column(length: 255)]
     private ?string $description = null;
@@ -34,12 +34,12 @@ class Report
         return $this->id;
     }
 
-    public function getLocation(): ?string
+    public function getLocation(): array
     {
         return $this->location;
     }
 
-    public function setLocation(string $location): static
+    public function setLocation(array $location): static
     {
         $this->location = $location;
 

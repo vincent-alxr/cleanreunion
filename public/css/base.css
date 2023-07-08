@@ -2,6 +2,11 @@
 html, body, #root {
     height: 100vh;
     margin: 0px;
+    background-color: #dfe6e9;
+}
+
+#root {
+    overflow: auto;
 }
 
 body {
@@ -9,6 +14,10 @@ body {
     flex-direction: column;
 }
 
+a {
+    text-decoration: none;
+    color: #00b894;
+}
 
 .page {
     flex: 1;

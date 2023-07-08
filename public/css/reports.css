@@ -4,7 +4,10 @@
 }
 
 .report {
-    padding: 5px;
+    padding: 20px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .report-images {
@@ -16,4 +19,11 @@
     background-size: cover;
     background-position: center center;
     background-color: aqua;
+}
+
+@media screen and (max-width: 768px) {
+    .reports {
+        display: flex;
+        flex-direction: column;
+    }
 }

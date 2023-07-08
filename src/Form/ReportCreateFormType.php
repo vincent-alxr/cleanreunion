@@ -14,7 +14,7 @@ class ReportCreateFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('location', TextType::class, [
+            ->add('location', LocationJsonType::class, [
                 'label' => 'Emplacement',
             ])
             ->add('description', TextareaType::class, [

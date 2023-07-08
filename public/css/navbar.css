@@ -2,6 +2,8 @@
     align-items: center;
     display: flex;
     flex-direction: row;
+    background-color: white;
+    border-bottom: 1px solid #b2bec3;
 }
 
 .nav-logo {
@@ -16,14 +18,19 @@
 .nav-item {
     cursor: pointer;
     text-align: center;
-    padding: 5px 10px;
+    padding: 20px 20px;
 }
 
 .nav-item:hover {
-    background-color: whitesmoke;
+    background-color: #b2bec3;
 }
   
 @media screen and (max-width: 768px) {
+    .nav {
+        border-bottom: none;    
+        border-top: 1px solid #b2bec3;
+    }
+    
     .nav-logo {
         display: none;
     }

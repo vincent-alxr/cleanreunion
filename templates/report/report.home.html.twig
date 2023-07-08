@@ -7,12 +7,15 @@
 {% endblock %}
 
 {% block body %}
+<div style="background-color: white; padding: 20px; border-radius: 20px; margin: 20px">
 Reports Home
+<a href="/reports/create">Signaler un dépot de déchet</a>
+</div>
 
 <div class="reports">
     {% for report in reports %}
         <div class="report">
-            <h2 class="report-title">{{ report.getLocation() }}</h2>
+            Latitude: {{ report.getLocation()['lat'] ?? '' }}, Longitude: {{ report.getLocation()['lng'] ?? '' }}
             <p class="report-description">{{ report.getDescription() }}</p>
             <div class="report-images">
             {% for image in report.getImages() %}
