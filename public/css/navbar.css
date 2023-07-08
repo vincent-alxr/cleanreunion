@@ -1,0 +1,36 @@
+.nav {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-logo {
+    flex: 1;
+}
+
+.nav-menu {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.nav-item:hover {
+    background-color: whitesmoke;
+}
+  
+@media screen and (max-width: 768px) {
+    .nav-logo {
+        display: none;
+    }
+    .nav-menu {
+        flex: 1;
+    }
+    .nav-item {
+        flex: 1;
+    }
+}

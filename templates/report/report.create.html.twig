@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CleanReunion{% endblock %}
+
+{% block body %}
+<h1>Créer un signalement</h1>
+        
+        {% if errors is defined and errors|length > 0 %}
+            <div class="alert alert-danger">
+                {% for error in errors %}
+                    <p>{{ error }}</p>
+                {% endfor %}
+            </div>
+        {% endif %}
+        
+        <form method="post" action="{{ path('report_create') }}" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="reportForm_location">Emplacement</label>
+                {{ form_widget(reportForm.location, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            
+            <div class="form-group">
+                <label for="reportForm_description">Description</label>
+                {{ form_widget(reportForm.description, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            dazdza
+            {{ form_rest(reportForm) }}
+            <button type="submit" class="btn btn-primary">Créer</button>
+        </form>
+{% endblock %}

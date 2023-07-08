@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CleanReunion{% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset('css/reports.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block body %}
+Reports Home
+
+<div class="reports">
+    {% for report in reports %}
+        <div class="report">
+            <h2 class="report-title">{{ report.getLocation() }}</h2>
+            <p class="report-description">{{ report.getDescription() }}</p>
+            <div class="report-images">
+            {% for image in report.getImages() %}
+                <div class="report-image" style="background-image:url({{ asset('uploads/images/' ~ image.getFilename()) }})"></div>
+            {% endfor %}
+            </div>
+        <!-- Render other report properties as needed -->
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

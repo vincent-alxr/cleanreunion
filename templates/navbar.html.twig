@@ -1,0 +1,24 @@
+{% block stylesheets %}
+    <link href="{{ asset('css/navbar.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+<div class="nav">
+    <div class="nav-logo">
+        Logo
+    </div>
+    <div class="nav-menu">
+        <a href="/reports" class="nav-item">Signalements</a >
+        <a href="/" class="nav-item">test</a >
+        <a href="/" class="nav-item">test</a >
+        <a href="/" class="nav-item">tdzadza</a >
+    </div>
+</div>
+
+{% block javascripts %}
+    <script>
+        let navElement = document.querySelector(".nav")
+        let navMenuElement = document.querySelector(".nav-menu")
+        let navItemElements = document.getElementsByClassName("nav-item")
+        console.log(navItemElements)
+    </script>
+{% endblock %}

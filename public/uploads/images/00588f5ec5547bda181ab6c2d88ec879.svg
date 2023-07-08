@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Dessin du ciel -->
+  <rect width="800" height="600" fill="#a9def9" />
+
+  <!-- Dessin du sol -->
+  <rect width="800" height="300" fill="#8cc63f" />
+
+  <!-- Dessin des arbres -->
+  <g id="treeGroup">
+    <!-- Arbre 1 -->
+    <path d="M100 450 L80 600 L120 600 Z" fill="#6e401f" /> <!-- Tronc de l'arbre 1 -->
+    <circle cx="100" cy="400" r="120" fill="#207c39" /> <!-- Feuillage de l'arbre 1 -->
+    <circle cx="140" cy="340" r="80" fill="#207c39" /> <!-- Feuillage supplémentaire de l'arbre 1 -->
+    <circle cx="60" cy="380" r="80" fill="#207c39" /> <!-- Feuillage supplémentaire de l'arbre 1 -->
+
+    <!-- Arbre 2 -->
+    <path d="M300 500 L280 600 L320 600 Z" fill="#6e401f" /> <!-- Tronc de l'arbre 2 -->
+    <circle cx="300" cy="450" r="100" fill="#207c39" /> <!-- Feuillage de l'arbre 2 -->
+    <circle cx="340" cy="400" r="70" fill="#207c39" /> <!-- Feuillage supplémentaire de l'arbre 2 -->
+    <circle cx="260" cy="420" r="70" fill="#207c39" /> <!-- Feuillage supplémentaire de l'arbre 2 -->
+
+    <!-- Arbre 3 -->
+    <path d="M500 450 L480 600 L520 600 Z" fill="#6e401f" /> <!-- Tronc de l'arbre 3 -->
+    <circle cx="500" cy="400" r="120" fill="#207c39" /> <!-- Feuillage de l'arbre 3 -->
+    <circle cx="540" cy="340" r="90" fill="#207c39" /> <!-- Feuillage supplémentaire de l'arbre 3 -->
+    <circle cx="460" cy="380" r="90" fill="#207c39" /> <!-- Feuillage supplémentaire de l'arbre 3 -->
+  </g>
+
+  <!-- Dessin des buissons -->
+  <g id="bushGroup">
+    <circle cx="200" cy="540" r="40" fill="#2e8540" /> <!-- Buisson 1 -->
+    <circle cx="380" cy="540" r="50" fill="#2e8540" /> <!-- Buisson 2 -->
+    <circle cx="600" cy="540" r="45" fill="#2e8540" /> <!-- Buisson 3 -->
+  </g>
+</svg>
